@@ -1,0 +1,539 @@
+@keyframes smoothScroll {
+    0% {
+      transform: translateY(-100px);
+    }
+
+    100% {
+      transform: translateY(0px);
+  }
+  }
+
+.announcement {
+    @apply relative overflow-hidden;
+}
+
+.announcement .announcement-bar {
+    @apply min-1200:w-[68.33%] m-0;
+}
+
+.announcement .swiper-slide p  {
+    @apply leading-34 text-white max-1199:text-body-4 max-1199:leading-15;
+}
+.announcement .btn-custom a{
+    @apply text-14 leading-18 px-14 py-8 hover:text-navy
+}
+
+.announcement .btn-custom a::before{
+    @apply bg-white
+}
+
+.header {
+    @apply fixed z-50 w-full top-0 left-0;
+}
+
+header .sticky-logo{
+    @apply hidden
+}
+
+.header-relative .header {
+    @apply relative shadow-header
+}
+
+header.is-sticky .sticky-logo {
+    @apply block
+}
+header.is-sticky .logo{
+    @apply hidden
+}
+
+.header .header-bottom {
+    @apply relative  flex w-auto items-center flex-wrap justify-between px-55 max-1440:px-30 max-1199:px-0 max-1199:py-20;
+}
+
+.header .nav-list .menu>li {
+    @apply cursor-pointer min-1441:px-22 min-1199:px-15 min-1199:py-30 relative;
+}
+
+.header .nav-list .menu>li>a {
+    @apply text-white border-b-2 border-transparent uppercase text-body-2 leading-20 font-body  max-1441:text-body-4 hover:border-b-grey transition-colors duration-300 ease-in-out max-1199:order-1 max-1199:py-20 font-bold pb-5;
+}
+
+.header .nav-list .menu>li.current-menu-item>a , .header .nav-list .menu>li.current-page-ancestor>a  , .header .nav-list .menu> li.current-menu-parent> a , .header .nav-list .menu li.current_page_item a {
+  @apply border-b-grey border-solid;
+}
+.header .nav-list .menu
+
+.header .nav-list .menu>li:hover {
+    @apply border-grey;
+}
+
+.header .nav-list .menu>li.active a {
+    @apply border-b-grey
+}
+
+.header .nav-list .menu .active svg path {
+    @apply fill-white;
+}
+
+.header .active .menu>li>a {
+    @apply text-navy;
+}
+header.is-sticky {
+    animation: smoothScroll 1s forwards;
+    z-index: 1030;
+    @apply !sticky top-0 shadow-header;
+}
+
+header.is-sticky .header-bottom , .header-relative .header-bottom {
+    @apply bg-white text-navy;
+}
+
+header.is-sticky .header-bottom .navbar-toggler svg path , .header-relative .header-bottom .navbar-toggler svg path {
+    @apply stroke-navy
+}
+
+header.is-sticky .nav-bar .search-icon svg path , .header-relative .nav-bar .search-icon svg path {
+    @apply fill-navy;
+}
+
+
+header.is-sticky .header-bottom .nav-list .menu>li>a , .header-relative .header-bottom .nav-list .menu>li>a {
+    @apply text-navy;
+}
+
+.header .navbar .menu>li>a {
+    @apply text-black uppercase text-body-2 min-1199:leading-108 leading-18 font-bold hover:text-navy transition-colors duration-300 ease-in-out max-1199:order-1 max-1199:py-20;
+}
+
+.header .navbar .menu li .sub-menu li a {
+    @apply font-bold hover:text-navy;
+}
+
+.header .navbar .menu>li.mega-menu {
+    @apply cursor-pointer
+}
+
+.header .menu-main-menu {
+    @apply max-1199:w-full
+}
+
+.nav-list {
+    @apply max-1199:hidden max-1199:w-full
+}
+
+.nav-list.active {
+    @apply max-1199:block mt-20 pb-20;
+}
+
+.nav-list a:hover {
+    @apply min-1199:border-grey;
+}
+
+.menu-open .navbar-toggler svg path {
+    @apply fill-navy;
+}
+
+/* Mega Menu Start */
+.header .nav-list .mega-menu {
+    @apply static max-1199:relative max-1199:flex max-1199:justify-between max-1199:flex-wrap max-1199:items-center;
+}
+
+.header .nav-list .mega-menu .sub-menu .menu-block>ul>li>a span {
+    @apply text-body-1 text-font hover:text-navy transition-colors duration-300 ease-in-out;
+}
+
+.header .nav-list .mega-menu .sub-menu .menu-block-link ul>li>a {
+    @apply text-body-1 text-font hover:text-navy;
+}
+
+.header .nav-list .submenu-button {
+    @apply hidden  max-1199:order-2 max-1199:mr-20 max-1199:w-20 max-1199:h-20 cursor-pointer max-1199:flex justify-center items-center;
+}
+
+.header .nav-list .mega-menu .sub-menu .tabbed-content .tabs ul li {
+    @apply flex justify-between w-full items-center cursor-pointer max-1199:relative border-0 border-b-1 border-solid border-b-white py-20;
+}
+
+.header .nav-list .mega-menu .sub-menu .tabbed-content .tabs ul li .innermenu-button img {
+    @apply h-full w-full object-cover
+}
+
+.header .submenu-button.submenu-opened {
+    @apply rotate-180
+}
+
+.header .submenu-button.submenu-opened svg path {
+    @apply fill-navy;
+}
+
+.header .navbar .mega-menu .sub-menu .tabbed-content .tabs ul li .submenu-button {
+    @apply mr-0;
+}
+
+.header .navbar .mega-menu .sub-menu .tabbed-content .tabs ul li.active .submenu-button svg path {
+    @apply fill-navy
+}
+
+.header .navbar .mega-menu .sub-menu .tabbed-content .tabs ul li.active .submenu-button {
+    @apply rotate-180
+}
+.header.is-sticky .btn-search svg path , .header-relative .btn-search svg path{
+    @apply fill-navy
+}
+
+.search-open .btn-search svg path {
+    @apply !fill-orange
+}
+
+.search-open .navbar {
+    @apply hidden
+}
+
+.search-bar {
+    @apply top-full right-0 w-0 bg-beige opacity-0 absolute overflow-hidden transition-all duration-100 delay-150
+}
+
+.search-bar.active {
+    @apply w-full opacity-100;
+}
+
+.search-bar {
+    @apply absolute right-0   opacity-0 duration-300 delay-150 transition-all top-[100%] w-0 bg-white;
+    box-shadow: inset 0 8px 13px -9px rgba(0, 0, 0, 0.3);
+}
+
+.search-bar.active {
+    @apply block;
+}
+
+.search-bar form,
+.search-bar-mobile form {
+    @apply relative bg-[url('../images/search.svg')] bg-no-repeat bg-[0px] bg-[length:20px] px-20;
+}
+
+.search-bar input,
+.search-input-bar input,
+.search-bar-mobile input {
+    @apply focus:!outline-none focus:!outline-0 pt-12 pb-8 appearance-none w-full placeholder:text-black leading-28 placeholder:text-body-2 placeholder:opacity-100 pl-10  placeholder:font-body font-body text-body-2 ;
+}
+
+.menu-open .search-open .navbar-toggler svg path {
+    @apply fill-black
+}
+
+.dropdown {
+    @apply opacity-0 z-[1] invisible w-max p-28 text-center max-1441:p-20  hidden flex-col left-[50%] translate-x-[-50%];
+    box-shadow: inset 0 8px 13px -9px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown a {
+    @apply font-body font-bold text-16 leading-20 uppercase max-1441:text-14 max-1441:leading-20 p-0;
+}
+
+.dropdown .submenu-options {
+    @apply border-b-2 border-transparent pt-10 pb-6 leading-20;
+}
+
+.dropdown .submenu-options:hover {
+    @apply border-grey;
+}
+
+.has-sub.active .dropdown {
+    @apply opacity-100 visible block min-1200:rounded-b-10;
+}
+
+.has-sub.active .dropdown .current-menu-item {
+    @apply border-b-grey;
+}
+
+.has-sub.active .dropdown {
+    @apply opacity-100 visible block;
+}
+
+.menu-open .header-bottom{
+    @apply bg-white
+}
+
+.menu-open .header .navbar-toggler svg path {
+    @apply !stroke-orange
+}
+
+.menu-open header .logo{
+    @apply hidden
+}
+
+.menu-open header .sticky-logo{
+    @apply block
+}
+
+.menu-open .search-icon svg path {
+    @apply fill-navy
+}
+
+.header.is-sticky .search-bar.active:before , .header-relative .search-bar.active:before{
+    @apply content-[''] absolute top-0 left-0 w-full h-15 z-1;
+    background: linear-gradient(#0003, #0000);
+}
+
+@media (max-width: 1198px) {
+    .header .nav-list .menu>li>a {
+        @apply border-none text-body-2 leading-20;
+    }
+
+    .header .logo img , .header .sticky-logo img{
+        @apply max-h-40
+    }
+
+    .dropdown .submenu-options{
+        @apply p-0
+    }
+
+    .has-sub.active {
+        @apply bg-navy;
+    }
+
+    .has-sub.active>a {
+        @apply text-white;
+    }
+
+    .search-open .nav-list  {
+        @apply hidden
+    }
+
+    .header .nav-list .menu .active a {
+        @apply !text-white;
+    }
+
+    .header .nav-list .menu  .submenu-options a {
+        @apply !text-black text-body-2 leading-20;
+    }
+
+    header .nav-bar .search-icon svg path {
+        @apply fill-navy;
+    }
+    .header .menu-main-menu ul>li{
+        @apply flex justify-between items-center flex-wrap
+    }
+
+    .header .menu-main-menu ul>li>a {
+        @apply p-20 block w-fit
+    }
+    .dropdown.show {
+        @apply order-3 relative w-full shadow-none bg-beige p-0 gap-0 hidden ;
+    }
+    .nav-list {
+        @apply h-512 absolute top-full !mt-0  bg-white  overflow-y-auto
+    }
+    .dropdown .submenu-options {
+        @apply border-0;
+    }
+    .header .nav-list .menu .submenu-options a:hover {
+        @apply text-orange;
+    }
+
+}
+
+/* ── Footer Instagram Strip (inside footer) ─── */
+.footer__insta {
+  @apply pt-64 max-1199:pt-48 max-767:pt-36 pb-0 overflow-hidden;
+}
+.footer__insta-header {
+  @apply flex items-center justify-between gap-16 mb-24 max-767:mb-16 flex-wrap px-80 max-1440:px-40 max-767:px-24;
+}
+.footer__insta-handle {
+  @apply inline-flex items-center gap-10 font-heading font-semibold text-body-2 text-white/60 transition-colors duration-300 ease-[ease] hover:text-white;
+}
+.footer__insta-handle svg {
+  @apply w-20 h-20 shrink-0;
+}
+.footer__insta-cta {
+  @apply font-body text-body-3 text-white/40 hover:text-white/70 transition-colors duration-300 ease-[ease] max-767:hidden;
+}
+.insta-grid {
+  @apply grid grid-cols-6 max-1199:grid-cols-3 max-575:grid-cols-2 gap-20;
+}
+.insta-item {
+  @apply relative overflow-hidden aspect-square cursor-pointer;
+  background: rgba(255, 255, 255, 0.06);
+}
+.insta-item img {
+  @apply w-full h-full object-cover block;
+  opacity: 0.8;
+  transition: opacity 0.4s ease, transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.insta-item__overlay {
+  @apply absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 ease-[ease];
+  background: rgba(27, 57, 103, 0.6);
+}
+.insta-item:hover img {
+  opacity: 1;
+  transform: scale(1.06);
+}
+.insta-item:hover .insta-item__overlay {
+  @apply opacity-100;
+}
+.insta-item__icon {
+  @apply text-white w-24! h-24!;
+}
+
+/* ── Footer — Blue Hawaiian Concierge style ──── */
+.footer {
+  @apply bg-black;
+}
+
+/* Main content */
+.footer__main {
+  @apply py-80 max-1199:py-64 max-767:py-50;
+}
+.footer__grid {
+  @apply grid grid-cols-[1.6fr_1fr_1fr_1fr_1fr] gap-x-40 gap-y-48 max-1199:grid-cols-3 max-1199:gap-x-36 max-767:grid-cols-2 max-575:grid-cols-1 max-767:gap-y-20 ;
+}
+
+/* Brand column */
+.footer__brand {
+  @apply flex flex-col max-1199:col-span-3 max-767:col-span-2 max-575:col-span-1;
+}
+.footer__brand-inner {
+  @apply max-1199:flex max-1199:items-start max-1199:gap-48 max-767:flex-col max-767:gap-28;
+}
+.footer__brand-info {
+  @apply max-1199:flex-1;
+}
+.footer__logo {
+  @apply mb-20;
+}
+.footer__logo img {
+  @apply h-44 w-auto object-contain;
+  filter: brightness(0) invert(1);
+}
+.footer__tagline {
+  @apply text-white/55 leading-28 font-body text-body-2 max-w-280 max-1199:max-w-full wrap-break-word whitespace-normal;
+}
+.footer__phone {
+  @apply mt-24 mb-20 flex items-center gap-10;
+}
+.footer__phone-icon-img {
+  @apply shrink-0;
+  opacity: 0.7;
+}
+.footer__phone a {
+  @apply font-body text-16 font-medium text-white/80 leading-normal transition-colors duration-300 ease-[ease] hover:text-primary;
+}
+.footer__social {
+  @apply flex items-center gap-10 flex-wrap max-767:mb-20;
+}
+.footer__social-link {
+  @apply w-38 h-38 rounded-full flex border border-white items-center justify-center transition-all duration-300 ease-[ease];
+  background: rgba(255, 255, 255, 0.1);
+}
+.footer__social-link:hover {
+  background: var(--color-primary);
+}
+.footer__social-link img {
+  @apply shrink-0;
+}
+
+/* Link columns */
+.footer__col {
+  @apply flex flex-col;
+}
+.footer__col-trigger {
+  @apply w-full flex items-center justify-between gap-10 bg-transparent cursor-pointer text-left pb-14 mb-20 max-767:mb-0 ;
+}
+.footer__col-heading {
+  @apply tracking-[0.15em] font-heading font-semibold text-body-2 uppercase text-white;
+}
+.footer__col-toggle-icon {
+  @apply text-white/40 shrink-0 transition-transform duration-300 ease-[ease] min-768:hidden;
+}
+.footer__col.is-open .footer__col-toggle-icon {
+  @apply rotate-180;
+}
+.footer__nav-panel {
+  @apply transition-[grid-template-rows] duration-[0.35s] ease-[ease];
+  display: grid;
+  grid-template-rows: 0fr;
+}
+.footer__col.is-open .footer__nav-panel {
+  grid-template-rows: 1fr;
+}
+.footer__col.is-open  .footer__nav-panel-inner{
+  @apply pb-16 max-767:pb-14
+}
+.footer__nav-panel-inner {
+  @apply overflow-hidden ;
+}
+.footer__nav {
+  @apply flex flex-col gap-10;
+}
+.footer__nav-item a {
+  @apply font-body text-body-3 text-white/55 transition-colors duration-300 ease-[ease] hover:text-white;
+}
+
+/* Contact column */
+.footer__contact-list {
+  @apply flex flex-col gap-16;
+}
+.footer__contact-item {
+  @apply flex flex-col gap-2;
+}
+.footer__contact-label {
+  @apply font-body text-body-4 uppercase tracking-[0.1em] text-white/35;
+}
+.footer__contact-value {
+  @apply font-body text-body-3 text-white/60 transition-colors duration-300 ease-[ease] leading-relaxed;
+}
+a.footer__contact-value:hover {
+  @apply text-white;
+}
+
+/* Trust row in bottom bar */
+.footer__trust-row {
+  @apply flex items-center gap-x-28 gap-y-10 flex-wrap max-767:justify-center mb-16;
+}
+.footer__trust-badge {
+  @apply flex items-center gap-8 font-body text-body-4 text-white/40;
+}
+.footer__trust-badge img {
+  @apply w-14 h-14 shrink-0;
+  filter: brightness(0) invert(1);
+  opacity: 0.4;
+}
+
+/* Bottom bar */
+.footer__divider {
+  @apply border-0 border-t border-solid m-0;
+  border-color: rgba(255, 255, 255, 0.08);
+}
+.footer__bottom {
+  @apply py-24 max-767:py-20;
+}
+.footer__bottom-inner {
+  @apply flex items-center justify-between gap-16 flex-wrap max-767:flex-col max-767:text-center max-767:gap-10;
+}
+.footer__copyright {
+  @apply font-body text-body-3 text-white/35;
+}
+.footer__copyright a {
+  @apply hover:text-white
+}
+.footer__legal-links {
+  @apply flex items-center gap-x-20 gap-y-8 flex-wrap max-767:justify-center;
+}
+.footer__legal-link {
+  @apply font-body text-body-3 text-white/35 hover:text-white/70 transition-colors duration-300 ease-[ease];
+}
+nav {
+  @apply w-full
+}
+
+.menu-open .navbar-toggler img , .search-open .search-icon img  {
+  filter: brightness(0) saturate(100%) invert(39%) sepia(97%) saturate(6886%) hue-rotate(320deg) brightness(92%) contrast(92%) !important;
+  -webkit-filter: brightness(0) saturate(100%) invert(39%) sepia(97%) saturate(6886%) hue-rotate(320deg) brightness(92%) contrast(92%) !important;
+}
+.menu-open .search-icon img {
+  @apply invert-100
+}
+.header.is-sticky .navbar-toggler img , .header.is-sticky .search-icon img{
+  @apply invert-100
+}

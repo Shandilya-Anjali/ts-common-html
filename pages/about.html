@@ -1,0 +1,499 @@
+    <!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog &amp; Stories – Hawaii Nautical</title>
+  <meta name="description"
+    content="Explore ocean adventures, wildlife encounters, crew stories, and insider tips from the Hawaii Nautical team." />
+  <link rel="preload" href="../assets/fonts/Inter-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link href="../dist/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5/dist/fancybox/fancybox.css" />
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="announcement bg-primary py-10">
+      <div class="container-fluid-sm flex items-center justify-between">
+        <div class="announcement-bar swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide max-1199:text-center">
+              <p>
+                Book 7+ Days In Advance &amp; Receive 5% Off Your Online Booking. Enter Promo Code: EARLY At Checkout.
+              </p>
+            </div>
+            <div class="swiper-slide max-1199:text-center">
+              <p>
+                Book 7+ Days In Advance &amp; Receive 5% Off Your Online Booking. Enter Promo Code: EARLY At Checkout.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="btn-custom max-1199:hidden!">
+          <a href="#" class="btn btn-outline-white" aria-label="Book your experience now">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <button tabindex="0"
+        class="navbar-toggler min-1199:hidden max-1199:pl-24 max-1199:pr-24 z-1 cursor-pointer border-0 bg-transparent p-0"
+        type="button" aria-label="Toggle navigation menu">
+        <img src="../images/icons/hamburger-white.svg" width="20" height="14" alt="" aria-hidden="true" />
+      </button>
+      <div class="max-1199:order-2">
+        <a href="https://hawaiinautical.com/" aria-label="Hawaii Nautical logo" class="logo">
+          <img src="https://hawaiinautical.com/wp-content/uploads/2025/09/logo.svg" class="h-full w-full" width="298"
+            height="48" alt="Hawaii Nautical" />
+        </a>
+        <a href="https://hawaiinautical.com/" aria-label="Hawaii Nautical logo" class="sticky-logo">
+          <img src="https://hawaiinautical.com/wp-content/uploads/2025/09/sticky-logo.svg" class="h-full w-full"
+            width="298" height="48" alt="Hawaii Nautical" />
+        </a>
+      </div>
+      <div class="nav-list max-1199:order-4">
+        <div class="min-1199:gap-[45px] max-1199:order-4 flex flex-col items-center justify-center gap-[20px]">
+          <nav aria-label="Main navigation">
+            <div id="mobile-menu-main" class="menu-main-menu">
+              <ul id="menu-header-menu" class="menu max-1199:!flex-col max-1199:bg-white flex">
+                <li class="menu-item">
+                  <a href="https://hawaiinautical.com/oahu/">Oahu</a>
+                </li>
+                <li class="menu-item menu-item-727">
+                  <a href="https://hawaiinautical.com/maui/">Maui</a>
+                </li>
+                <li class="menu-item menu-item-726">
+                  <a href="https://hawaiinautical.com/big-island/">Big Island</a>
+                </li>
+                <li class="menu-item menu-item-753">
+                  <a href="#" aria-haspopup="true" aria-expanded="false">Private Charters</a>
+                  <ul class="dropdown sub-menu absolute top-full mt-2 w-64 bg-white shadow-lg">
+                    <li class="menu-item submenu-options">
+                      <a href="https://hawaiinautical.com/oahu/ko-olina/ko-olina-luxury-private-charter/">Oahu Private
+                        Charters</a>
+                    </li>
+                    <li class="menu-item submenu-options">
+                      <a href="https://hawaiinautical.com/maui/maalaea/maui-luxury-private-charter/">Maui Private
+                        Charters</a>
+                    </li>
+                    <li class="menu-item submenu-options">
+                      <a href="https://hawaiinautical.com/big-island/kona/kona-luxury-private-yacht-charter/">Big Island
+                        Private Charters</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <a href="https://hawaiinautical.com/about/">About Us</a>
+                  <ul class="dropdown sub-menu absolute top-full mt-2 w-64 bg-white shadow-lg">
+                    <li class="menu-item submenu-options">
+                      <a href="https://hawaiinautical.com/about/our-fleets/">Our Fleet</a>
+                    </li>
+                    <li class="menu-item submenu-options">
+                      <a href="https://hawaiinautical.com/about/dolphin-smart/">Dolphin Smart</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <a href="#" aria-haspopup="true" aria-expanded="false">Contact us</a>
+                  <ul class="dropdown sub-menu absolute top-full mt-2 w-64 bg-white shadow-lg">
+                    <li class="menu-item submenu-options">
+                      <a href="https://hawaiinautical.com/oahu-harbors/">Oahu Harbors</a>
+                    </li>
+                    <li class="menu-item submenu-options">
+                      <a href="https://hawaiinautical.com/maui-harbor/">Maui Harbor</a>
+                    </li>
+                    <li class="menu-item submenu-options">
+                      <a href="https://hawaiinautical.com/big-island-harbors/">Big Island Harbors</a>
+                    </li>
+                    <li class="menu-item submenu-options">
+                      <a href="https://hawaiinautical.com/get-in-touch/">Get In Touch</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="search-icon max-1199:pr-24 order-3">
+        <button type="button" tabindex="0" class="btn-search block cursor-pointer" aria-label="Open search">
+          <img src="../images/icons/search-white.svg" width="20" height="20" alt="" aria-hidden="true" />
+        </button>
+      </div>
+    </div>
+    <div class="search-bar">
+      <div class="min-1024:py-40 min-1024:px-100 bg-beige relative flex w-full items-center gap-4 p-20">
+        <div class="relative flex w-full items-center gap-[28px] border-0 border-b-[1.5px] border-solid border-black">
+          <form role="search" method="get" class="block w-full" action="#">
+            <label for="search" class="visually-hidden">Search for:</label>
+            <input type="search" id="search" class="search-field" placeholder="Search..." value="" name="s"
+              aria-label="Search for:" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+        <section class="inner-banner-wrapper" aria-label="Blog hero">
+      <div class="inner-hero__bg" aria-hidden="true">
+        <img src="../images/banner-2.webp" width="1512" height="820" alt="Hawaii ocean aerial view"
+          loading="eager" decoding="async" />
+      </div>
+      <div class="inner-hero__overlay" aria-hidden="true"></div>
+
+      <div class="hero__inner">
+        <div class="container-fluid">
+          <div class="inner-hero__title title-white">
+            <h1>About us</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-wrapper py-100 max-1023:py-60 max-767:py-40">
+      <div class="container-fluid">
+        <div class="gallery-inner">
+
+          <!-- Featured image -->
+          <div class="gallery-featured">
+            <a id="stewardship-gallery-link" href="../images/banner-1.webp" class="block w-full h-full cursor-zoom-in" aria-label="Open gallery">
+              <img id="stewardship-gallery-featured" src="../images/banner-1.webp" alt="Gallery image"
+                class="w-full h-full object-cover transition-opacity duration-300" />
+            </a>
+          </div>
+
+          <!-- Thumbnail strip + nav -->
+          <div class="gallery-thumbs-wrap">
+
+            <div class="swiper stewardship-gallery-swiper" id="stewardship-gallery-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide stewardship-thumb is-active" data-src="../images/banner-1.webp">
+                  <img src="../images/banner-1.webp" alt="" class="w-full h-full object-cover" aria-hidden="true" />
+                </div>
+                <div class="swiper-slide stewardship-thumb" data-src="../images/banner-2.webp">
+                  <img src="../images/banner-2.webp" alt="" class="w-full h-full object-cover" aria-hidden="true" />
+                </div>
+                <div class="swiper-slide stewardship-thumb" data-src="../images/banner-3.webp">
+                  <img src="../images/banner-3.webp" alt="" class="w-full h-full object-cover" aria-hidden="true" />
+                </div>
+                <div class="swiper-slide stewardship-thumb" data-src="../images/mobile-banner1.webp">
+                  <img src="../images/mobile-banner1.webp" alt="" class="w-full h-full object-cover" aria-hidden="true" />
+                </div>
+                <div class="swiper-slide stewardship-thumb" data-src="../images/mobile-banner-2.webp">
+                  <img src="../images/mobile-banner-2.webp" alt="" class="w-full h-full object-cover" aria-hidden="true" />
+                </div>
+                <div class="swiper-slide stewardship-thumb" data-src="../images/mobile-banner3.webp">
+                  <img src="../images/mobile-banner3.webp" alt="" class="w-full h-full object-cover" aria-hidden="true" />
+                </div>
+                <div class="swiper-slide stewardship-thumb" data-src="../images/banner-2.webp">
+                  <img src="../images/banner-2.webp" alt="" class="w-full h-full object-cover" aria-hidden="true" />
+                </div>
+                <div class="swiper-slide stewardship-thumb" data-src="../images/banner-3.webp">
+                  <img src="../images/banner-3.webp" alt="" class="w-full h-full object-cover" aria-hidden="true" />
+                </div>
+                <div class="swiper-slide stewardship-thumb" data-src="../images/mobile-banner1.webp">
+                  <img src="../images/mobile-banner1.webp" alt="" class="w-full h-full object-cover" aria-hidden="true" />
+                </div>
+              </div>
+            </div>
+
+            <button id="stewardship-gallery-prev" class="gallery-nav gallery-nav--prev" aria-label="Previous">
+              <img src="../images/icons/chevron-left-dark.svg" width="16" height="16" alt="" aria-hidden="true" />
+            </button>
+            <button id="stewardship-gallery-next" class="gallery-nav gallery-nav--next" aria-label="Next">
+              <img src="../images/icons/chevron-right-dark.svg" width="16" height="16" alt="" aria-hidden="true" />
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────────
+         SECTION: PROMO — image left, content right
+    ────────────────────────────────────────────── -->
+    <section class="promo-section">
+      <div class="container-fluid">
+        <div class="promo-inner promo-inner--img-left">
+          <div class="promo-visual">
+            <img src="../images/banner-3.webp" alt="Private charter ocean experience" loading="lazy" />
+          </div>
+          <div class="promo-content">
+            <div class="title-bold promo-header">
+              <h2>Private Charters</h2>
+            </div>
+            <div class="content promo-desc">
+              <p>Your Dream Day in Paradise! Plan your perfect day with a private charter. All of the boats in our fleet are available for private charters. Whether it's a wedding, corporate retreat, or simply a luxurious day at sea, every detail is tailored to your wishes.</p>
+            </div>
+            <a href="#" class="btn btn-b-pink">Explore Private Charters</a>
+          </div>
+        </div>
+      </div>  
+    </section>
+
+    <!-- ─────────────────────────────────────────
+         SECTION: PROMO — content left, image right
+    ────────────────────────────────────────────── -->
+    <section class="promo-section">
+      <div class="container-fluid">
+        <div class="promo-inner promo-inner--img-right">
+          <div class="promo-content">
+            <div class="title-bold promo-header">
+              <h2>Ocean Adventures</h2>
+            </div>
+            <div class="content promo-desc">
+              <p>Explore the breathtaking waters of Hawaii with our expert-guided ocean tours. From snorkeling with sea turtles to whale watching, every adventure is crafted to connect you with the magic of the Pacific.</p>
+            </div>
+            <a href="#" class="btn btn-b-pink">Explore Tours</a>
+          </div>
+          <div class="promo-visual">
+            <img src="../images/banner-1.webp" alt="Ocean adventure tour" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer Start -->
+  <footer class="footer overflow-hidden" role="contentinfo" aria-label="Site footer">
+
+    <!-- Instagram Strip Start -->
+    <div class="footer__insta">
+      <div class="footer__insta-header">
+        <a href="https://www.instagram.com/" class="footer__insta-handle" target="_blank" rel="noopener noreferrer"
+          aria-label="Follow us on Instagram">
+          <img src="../images/icons/instagram.svg" width="22" height="22" alt="" aria-hidden="true" />
+          @yourhandle
+        </a>
+        <a href="https://www.instagram.com/" class="footer__insta-cta" target="_blank" rel="noopener noreferrer">Follow
+          on Instagram</a>
+      </div>
+      <div class="container-fluid">
+        <div class="insta-grid" id="instagram-feed" aria-label="Instagram photo feed">
+          <div class="insta-item">
+            <img src="../images/banner-1.webp" width="400" height="400" alt="Instagram post" loading="lazy"
+              decoding="async" />
+            <div class="insta-item__overlay" aria-hidden="true">
+              <img src="../images/icons/instagram.svg" class="insta-item__icon" width="22" height="22" alt="" aria-hidden="true" />
+            </div>
+          </div>
+          <div class="insta-item">
+            <img src="../images/banner-2.webp" width="400" height="400" alt="Instagram post" loading="lazy"
+              decoding="async" />
+            <div class="insta-item__overlay" aria-hidden="true">
+              <img src="../images/icons/instagram.svg" class="insta-item__icon" width="22" height="22" alt="" aria-hidden="true" />
+            </div>
+          </div>
+          <div class="insta-item">
+            <img src="../images/banner-3.webp" width="400" height="400" alt="Instagram post" loading="lazy"
+              decoding="async" />
+            <div class="insta-item__overlay" aria-hidden="true">
+              <img src="../images/icons/instagram.svg" class="insta-item__icon" width="22" height="22" alt="" aria-hidden="true" />
+            </div>
+          </div>
+          <div class="insta-item">
+            <img src="../images/mobile-banner1.webp" width="400" height="400" alt="Instagram post" loading="lazy"
+              decoding="async" />
+            <div class="insta-item__overlay" aria-hidden="true">
+              <img src="../images/icons/instagram.svg" class="insta-item__icon" width="22" height="22" alt="" aria-hidden="true" />
+            </div>
+          </div>
+          <div class="insta-item">
+            <img src="../images/mobile-banner-2.webp" width="400" height="400" alt="Instagram post" loading="lazy"
+              decoding="async" />
+            <div class="insta-item__overlay" aria-hidden="true">
+              <img src="../images/icons/instagram.svg" class="insta-item__icon" width="22" height="22" alt="" aria-hidden="true" />
+            </div>
+          </div>
+          <div class="insta-item">
+            <img src="../images/mobile-banner3.webp" width="400" height="400" alt="Instagram post" loading="lazy"
+              decoding="async" />
+            <div class="insta-item__overlay" aria-hidden="true">
+              <img src="../images/icons/instagram.svg" class="insta-item__icon" width="22" height="22" alt="" aria-hidden="true" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Instagram Strip End -->
+
+    <!-- Main Footer Content -->
+    <div class="footer__main">
+      <div class="container-fluid">
+        <div class="footer__grid">
+
+          <!-- Brand Column -->
+          <div class="footer__brand">
+            <div class="footer__brand-inner">
+              <div class="footer__brand-info">
+                <div class="footer__logo">
+                  <a href="#" aria-label="Company home">
+                    <img src="../images/logo.svg" width="200" height="44" alt="Company Logo" />
+                  </a>
+                </div>
+                <p class="footer__tagline">
+                  Premium ocean adventures, curated experiences, and world-class hospitality — crafted for those who
+                  seek the extraordinary.
+                </p>
+                <div class="footer__phone">
+                  <img src="../images/icons/phone.svg" width="16" height="16" alt="" aria-hidden="true"
+                    class="footer__phone-icon-img" />
+                  <a href="tel:+18085551234">+1 (808) 555-1234</a>
+                </div>
+                <div class="footer__social" aria-label="Social media links">
+                  <a href="#" class="footer__social-link" aria-label="Follow us on Instagram" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="../images/icons/instagram.svg" width="18" height="18" alt="" aria-hidden="true" />
+                  </a>
+                  <a href="#" class="footer__social-link" aria-label="Follow us on Facebook" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="../images/icons/facebook.svg" width="16" height="18" alt="" aria-hidden="true" />
+                  </a>
+                  <a href="#" class="footer__social-link" aria-label="Follow us on YouTube" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="../images/icons/youtube.svg" width="20" height="15" alt="" aria-hidden="true" />
+                  </a>
+                  <a href="#" class="footer__social-link" aria-label="Follow us on TikTok" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="../images/icons/tiktok.svg" width="17" height="18" alt="" aria-hidden="true" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Get In Touch Column -->
+          <div class="footer__col" data-footer-col>
+            <button class="footer__col-trigger" data-footer-toggle aria-expanded="false" aria-controls="footer-col-1">
+              <span class="footer__col-heading">Get In Touch</span>
+              <img class="footer__col-toggle-icon" src="../images/icons/chevron-down-white.svg" width="18" height="18"
+                alt="" aria-hidden="true" />
+            </button>
+            <div class="footer__nav-panel" id="footer-col-1">
+              <div class="footer__nav-panel-inner">
+                <nav aria-label="Contact navigation">
+                  <ul class="footer__nav">
+                    <li class="footer__nav-item"><a href="#">Contact Us</a></li>
+                    <li class="footer__nav-item"><a href="#">Become a Partner</a></li>
+                    <li class="footer__nav-item"><a href="#">Careers</a></li>
+                    <li class="footer__nav-item"><a href="#">Corporate Events</a></li>
+                    <li class="footer__nav-item"><a href="#">Private Charters</a></li>
+                    <li class="footer__nav-item"><a href="#">Group Bookings</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+
+          <!-- Explore Column -->
+          <div class="footer__col" data-footer-col>
+            <button class="footer__col-trigger" data-footer-toggle aria-expanded="false" aria-controls="footer-col-2">
+              <span class="footer__col-heading">Explore</span>
+              <img class="footer__col-toggle-icon" src="../images/icons/chevron-down-white.svg" width="18" height="18"
+                alt="" aria-hidden="true" />
+            </button>
+            <div class="footer__nav-panel" id="footer-col-2">
+              <div class="footer__nav-panel-inner">
+                <nav aria-label="Explore navigation">
+                  <ul class="footer__nav">
+                    <li class="footer__nav-item"><a href="#">Ocean Adventures</a></li>
+                    <li class="footer__nav-item"><a href="#">Sunset Cruises</a></li>
+                    <li class="footer__nav-item"><a href="#">Island Tours</a></li>
+                    <li class="footer__nav-item"><a href="#">Family Activities</a></li>
+                    <li class="footer__nav-item"><a href="#">Cultural Experiences</a></li>
+                    <li class="footer__nav-item"><a href="#">Aerial Tours</a></li>
+                    <li class="footer__nav-item"><a href="#">Water Sports</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+
+          <!-- Get Started Column -->
+          <div class="footer__col" data-footer-col>
+            <button class="footer__col-trigger" data-footer-toggle aria-expanded="false" aria-controls="footer-col-3">
+              <span class="footer__col-heading">Get Started</span>
+              <img class="footer__col-toggle-icon" src="../images/icons/chevron-down-white.svg" width="18" height="18"
+                alt="" aria-hidden="true" />
+            </button>
+            <div class="footer__nav-panel" id="footer-col-3">
+              <div class="footer__nav-panel-inner">
+                <nav aria-label="Get started navigation">
+                  <ul class="footer__nav">
+                    <li class="footer__nav-item"><a href="#">Book a Tour</a></li>
+                    <li class="footer__nav-item"><a href="#">Gift Vouchers</a></li>
+                    <li class="footer__nav-item"><a href="#">Testimonials</a></li>
+                    <li class="footer__nav-item"><a href="#">Gallery</a></li>
+                    <li class="footer__nav-item"><a href="#">Blog &amp; News</a></li>
+                    <li class="footer__nav-item"><a href="#">About Us</a></li>
+                    <li class="footer__nav-item"><a href="#">Our Team</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+
+          <!-- Information Column -->
+          <div class="footer__col" data-footer-col>
+            <button class="footer__col-trigger" data-footer-toggle aria-expanded="false" aria-controls="footer-col-4">
+              <span class="footer__col-heading">Information</span>
+              <img class="footer__col-toggle-icon" src="../images/icons/chevron-down-white.svg" width="18" height="18"
+                alt="" aria-hidden="true" />
+            </button>
+            <div class="footer__nav-panel" id="footer-col-4">
+              <div class="footer__nav-panel-inner">
+                <address class="footer__contact-list" style="font-style: normal;">
+                  <div class="footer__contact-item">
+                    <span class="footer__contact-label">Address</span>
+                    <span class="footer__contact-value">100 Harbor Drive, Suite 200<br />Honolulu, HI 96813</span>
+                  </div>
+                  <div class="footer__contact-item">
+                    <span class="footer__contact-label">Email</span>
+                    <a href="mailto:info@company.com" class="footer__contact-value">info@company.com</a>
+                  </div>
+                  <div class="footer__contact-item">
+                    <span class="footer__contact-label">Hours</span>
+                    <span class="footer__contact-value">Mon – Sat: 7 AM – 8 PM<br />Sun: 8 AM – 6 PM</span>
+                  </div>
+                </address>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <hr class="footer__divider" />
+
+    <!-- Bottom Bar -->
+    <div class="footer__bottom">
+      <div class="container-fluid">
+        <div class="footer__bottom-inner">
+          <p class="footer__copyright">
+            © 2026 <a href="#">Company Name.</a> All rights reserved.
+          </p>
+          <nav class="footer__legal-links" aria-label="Legal navigation">
+            <a href="#" class="footer__legal-link">Privacy Policy</a>
+            <a href="#" class="footer__legal-link">CCPA Notice</a>
+            <a href="#" class="footer__legal-link">Terms of Service</a>
+            <a href="#" class="footer__legal-link">Accessibility</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <!-- Site Footer End -->
+
+  <script src="../dist/vendor/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5/dist/fancybox/fancybox.umd.js"></script>
+  <script defer type="module" src="../assets/js/script.js"></script>
+</body>
+
+</html>

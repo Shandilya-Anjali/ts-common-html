@@ -1,0 +1,160 @@
+
+@layer base, components, utilities;
+
+@import "tailwindcss";
+@import "../../node_modules/swiper/swiper-bundle.min.css";
+@import "./base.css";
+@import "./components.css";
+@import "./utilities.css";
+@import "./layout.css";
+
+@theme {
+  /* ── Colors ── */
+  --color-cream: #F1DFBE;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-grey: #999999;
+  --color-font: #1A1A1A;
+  --color-navy: #1B3967;
+  --color-orange: #F36C24;
+  --color-beige: #F8F4ED;
+  --color-primary: #E31C79;
+ --color-body: #3A3A3A;
+
+  --color-primary-hover: color-mix(in srgb, var(--color-primary) 20%, white);
+ --color-lavender-blue: color-mix(in srgb, var(--color-cool) 18%, white);
+ --color-ice-blue: color-mix(in srgb, var(--color-brand) 8%, white);
+
+
+  /* ── Fonts ── */
+  --font-body: "Inter", sans-serif;
+  --font-heading: "Poppins", sans-serif;
+  --font-inherit: inherit;
+  --font-weight-inherit: inherit;
+
+  /* ── Body text sizes ── */
+  --text-body-1: 20px;
+  --text-body-2: 16px;
+  --text-body-3: 14px;
+  --text-body-4: 12px;
+
+  /* ── Heading sizes – desktop ── */
+  --text-heading-1: 64px;
+  --text-heading-1-big: 80px;
+  --text-heading-2: 48px;
+  --text-heading-3: 32px;
+  --text-heading-4: 24px;
+  --text-heading-5: 16px;
+  --text-heading-6: 12px;
+
+  /* ── Heading sizes – tablet ── */
+  --text-heading-1-tablet: 40px;
+  --text-heading-2-tablet: 32px;
+  --text-heading-3-tablet: 26px;
+
+  /* ── Heading sizes – mobile ── */
+  --text-heading-1-mobile: 32px;
+  --text-heading-2-mobile: 32px;
+  --text-heading-3-mobile: 24px;
+  --text-heading-4-mobile: 20px;
+
+  /* ── Arbitrary text sizes ── */
+  --text-12: 12px;
+  --text-14: 14px;
+  --text-15: 15px;
+  --text-16: 16px;
+  --text-18: 18px;
+  --text-20: 20px;
+  --text-22: 22px;
+  --text-24: 24px;
+  --text-26: 26px;
+  --text-28: 28px;
+  --text-30: 30px;
+  --text-32: 32px;
+  --text-34: 34px;
+  --text-36: 36px;
+  --text-38: 38px;
+  --text-40: 40px;
+  --text-42: 42px;
+  --text-44: 44px;
+  --text-45: 45px;
+  --text-46: 46px;
+  --text-48: 48px;
+  --text-50: 50px;
+  --text-52: 52px;
+  --text-54: 54px;
+  --text-56: 56px;
+  --text-58: 58px;
+  --text-60: 60px;
+  --text-62: 62px;
+  --text-64: 64px;
+  --text-66: 66px;
+  --text-68: 68px;
+  --text-70: 70px;
+  --text-72: 72px;
+  --text-74: 74px;
+  --text-76: 76px;
+  --text-78: 78px;
+  --text-80: 80px;
+  --text-82: 82px;
+  --text-84: 84px;
+  --text-86: 86px;
+  --text-88: 88px;
+  --text-90: 90px;
+  --text-92: 92px;
+  --text-94: 94px;
+  --text-96: 96px;
+  --text-98: 98px;
+  --text-100: 100px;
+  --text-120: 120px;
+  --text-140: 140px;
+  --text-180: 180px;
+  --text-inherit: inherit;
+
+  /* ── Spacing (px) ── */
+  --spacing: 1px;
+
+
+  /* ── Shadows ── */
+  --shadow-card: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  --shadow-header: 0px 5px 15px rgba(0, 0, 0, 0.17);
+  --drop-shadow-stretched: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  --shadow-blog-card: 0px 4px 20px rgba(0, 0, 0, 0.2);
+
+  /* ── Border radius ── */
+  --radius-0: 0px;
+  --radius-4: 4px;
+  --radius-5: 5px;
+  --radius-8: 8px;
+  --radius-10: 10px;
+  --radius-20: 20px;
+  --radius-25: 25px;
+  --radius-30: 30px;
+  --radius-60: 60px;
+  --radius-70: 70px;
+  --radius-110: 110px;
+  --radius-50p: 50%;
+
+  /* ── Breakpoints ── */
+  --breakpoint-374: 374px;
+  --breakpoint-390: 390px;
+  --breakpoint-479: 479px;
+  --breakpoint-575: 575px;
+  --breakpoint-576: 576px;
+  --breakpoint-640: 640px;
+  --breakpoint-767: 767px;
+  --breakpoint-768: 768px;
+  --breakpoint-990: 990px;
+  --breakpoint-1023: 1023px;
+  --breakpoint-1024: 1024px;
+  --breakpoint-1199: 1199px;
+  --breakpoint-1200: 1200px;
+  --breakpoint-1280: 1280px;
+  --breakpoint-1365: 1365px;
+  --breakpoint-1440: 1440px;
+  --breakpoint-1441: 1441px;
+  --breakpoint-1512: 1512px;
+  --breakpoint-1600: 1600px;
+  --breakpoint-1920: 1920px;
+  --breakpoint-2000: 2000px;
+}

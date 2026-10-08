@@ -1,0 +1,157 @@
+/* ── Containers ──────────────────────────────── */
+.container-fluid {
+  @apply mx-auto w-full px-80 max-1440:px-40 max-767:px-24 min-1920:max-w-[1920px];
+}
+
+.container-fluid-sm {
+  @apply mx-auto w-full px-55 max-1440:px-30 max-767:px-24 min-1920:max-w-[1920px];
+}
+
+.container-fluid-lg {
+  @apply mx-auto w-full px-100 max-1440:px-60 max-767:px-24 min-1920:max-w-[1920px];
+}
+
+.container-fluid-xl {
+  @apply mx-auto w-full px-140 max-1440:px-60 max-767:px-24 min-1920:max-w-[1920px];
+}
+
+.container-xsm {
+  @apply mx-auto w-full px-30 min-1920:max-w-[1920px];
+}
+/* ── Title utilities ─────────────────────────── */
+.title-bold h1,
+.title-bold h2,
+.title-bold h3,
+.title-bold h4,
+.title-bold h5,
+.title-bold h6 {
+  @apply font-bold;
+}
+
+.title-white h1,
+.title-white h2,
+.title-white h3,
+.title-white h4,
+.title-white h5,
+.title-white h6 {
+  @apply text-white;
+}
+
+.title-black h1,
+.title-black h2,
+.title-black h3,
+.title-black h4,
+.title-black h5,
+.title-black h6 {
+  @apply text-black;
+}
+
+.sub-title span {
+  @apply font-heading font-normal text-heading-3 max-1199:text-heading-4 max-767:text-heading-3-mobile capitalize;
+}
+
+.sub-title.white span {
+  @apply text-white;
+}
+
+.sub-title.black span {
+  @apply text-black;
+}
+
+/* ── Content ─────────────────────────────────── */
+.content {
+  @apply relative flex flex-col w-full;
+}
+
+.content p {
+  @apply font-body text-body-2 text-body font-normal leading-28;
+}
+
+.content p + p {
+  @apply mt-20;
+}
+
+.content-black p {
+  @apply text-black;
+}
+
+.content.bold p {
+  @apply font-bold;
+}
+
+.content.white p {
+  @apply text-white;
+}
+
+/* ── Buttons ─────────────────────────────────── */
+.btn {
+  @apply inline-flex cursor-pointer items-center justify-center text-14 font-bold leading-normal uppercase tracking-wide transition-all duration-300 ease-in-out;
+  letter-spacing: 0.06em;
+}
+
+.btn-pink {
+    @apply text-white hover:bg-primary-hover hover:text-primary  relative inline-flex items-center bg-primary  justify-center px-32 py-14 text-center shadow-none rounded-[62px] z-1 overflow-hidden transition-all duration-500 delay-100 ease-in-out;
+  }
+
+  .btn-b-pink {
+    @apply text-primary hover:bg-primary-hover border-solid border border-primary   relative inline-flex items-center bg-transparent px-32 py-14 justify-center text-center shadow-none rounded-[62px] z-1 overflow-hidden transition-all duration-500 delay-100 ease-in-out;
+  }
+
+/* Dark fill — used on light backgrounds */
+.btn-primary {
+  @apply text-white bg-black px-32 py-14 hover:bg-font;
+}
+
+/* White fill — used on dark/banner backgrounds */
+.btn-primary-light {
+  @apply text-black bg-white px-32 py-14 hover:bg-orange;
+}
+
+/* Outline white — used on dark/banner backgrounds */
+.btn-outline-white {
+  @apply text-white bg-transparent px-30 py-12 border-2 border-solid border-white hover:bg-white hover:text-black;
+}
+
+/* Outline dark — used on light backgrounds */
+.btn-outline {
+  @apply text-black bg-transparent px-30 py-12 border-2 border-solid border-black hover:bg-black hover:text-white;
+}
+
+.btn-link a {
+  @apply text-black font-bold uppercase hover:text-font flex gap-10 justify-center items-center transition-all duration-300;
+}
+
+.btn-custom {
+  @apply flex flex-wrap justify-center items-center gap-16;
+}
+
+/* ── Global list ─────────────────────────────── */
+.global-list ul {
+  @apply flex flex-col items-start justify-start m-0 p-0 w-full gap-10;
+}
+
+.global-list ul li {
+  @apply relative w-fit m-0 p-0 pl-20 text-font text-body-2 font-normal font-body;
+}
+
+.global-list ul li::before {
+  content: "";
+  @apply absolute top-5 left-0 w-10 h-10 rounded-full bg-black;
+}
+
+.global-list.white ul li {
+  @apply text-white;
+}
+
+.global-list.white ul li::before {
+  @apply bg-white;
+}
+
+input {
+  @apply appearance-none outline-none border-0;
+}
+
+.visually-hidden {
+  @apply absolute h-0 w-0 invisible;
+}
+
